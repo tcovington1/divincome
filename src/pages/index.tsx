@@ -1,12 +1,14 @@
 import Link from "next/link";
 import { useGetCurrentUserQuery } from "../client/graphql/getCurrentUser.generated";
+import { Header } from "../client/components/Header";
 
 function Homepage() {
   const [{ data }] = useGetCurrentUserQuery();
 
   return (
     <>
-      <h1>DivIncome</h1>
+      <Header />
+      {/* <h1>DivIncome</h1>
       <h2>Helping investors easily track their dividend income in one place.</h2>
       {!data?.currentUser ? (
         <>
@@ -15,7 +17,7 @@ function Homepage() {
         </>
       ) : (
         <Link href="/app">Go to dashboard</Link>
-      )}
+      )} */}
     </>
   );
 }

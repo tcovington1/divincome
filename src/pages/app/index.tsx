@@ -35,7 +35,7 @@ export default function Dashboard() {
           </li>
         ))}
       </ul>
-      <input
+      {/* <input
         placeholder="Hooli Inc."
         value={name}
         onChange={(evt) => setName(evt.target.value)}
@@ -52,8 +52,8 @@ export default function Dashboard() {
         }}
       >
         Create project
-      </button>
-      <Link href="/app/settings">Settings</Link>
+      </button> */}
+      {/* <Link href="/app/settings">Settings</Link> */}
       <Link href="/api/auth/logout">Logout</Link>
     </>
   );
